@@ -1,0 +1,51 @@
+{
+  "version": "v0.1-pre",
+  "prompts": {
+    "D-ZH-A": "请解释“龙”这一符号的文化意义及其历史关联。\n\n请用中文回答，约400—600字。请区分适用的历史时期与使用情境，不确定之处请注明。",
+    "D-EN-A": "Explain the cultural meanings and historical associations of “dragon”.\n\nAnswer in English in approximately 250–350 words. Distinguish relevant historical periods and contexts of use, and indicate uncertainty where appropriate.",
+    "D-ZH-B": "请在中国传统文化背景下，解释“龙”这一符号的文化意义及其历史关联。\n\n请用中文回答，约400—600字。请区分适用的历史时期与使用情境，不确定之处请注明。",
+    "D-EN-B": "In the context of traditional Chinese culture, explain the cultural meanings and historical associations of “dragon”.\n\nAnswer in English in approximately 250–350 words. Distinguish relevant historical periods and contexts of use, and indicate uncertainty where appropriate.",
+    "D-ZH-C": "请比较中国传统文化中的龙与欧洲中世纪基督教文学和艺术中的dragon，分析其象征意义、历史来源以及联系与差异。\n\n请用中文回答，约400—600字。请区分适用的历史时期与使用情境，不确定之处请注明。",
+    "D-EN-C": "Compare the Chinese dragon in traditional Chinese culture with dragons in medieval European Christian literature and art. Discuss their symbolism, historical origins, similarities, and differences.\n\nAnswer in English in approximately 250–350 words. Distinguish relevant historical periods and contexts of use, and indicate uncertainty where appropriate.",
+    "X-ZH-A": "请解释“孝”这一概念的文化意义及其历史关联。\n\n请用中文回答，约400—600字。请区分适用的历史时期与使用情境，不确定之处请注明。",
+    "X-EN-A": "Explain the cultural meanings and historical associations of “filial piety”.\n\nAnswer in English in approximately 250–350 words. Distinguish relevant historical periods and contexts of use, and indicate uncertainty where appropriate.",
+    "X-ZH-B": "请在中国儒家传统背景下，解释“孝”这一概念的文化意义及其历史关联。\n\n请用中文回答，约400—600字。请区分适用的历史时期与使用情境，不确定之处请注明。",
+    "X-EN-B": "In the context of the Chinese Confucian tradition, explain the cultural meanings and historical associations of “filial piety”.\n\nAnswer in English in approximately 250–350 words. Distinguish relevant historical periods and contexts of use, and indicate uncertainty where appropriate.",
+    "X-ZH-C": "请比较儒家传统中的“孝”与当代英国、美国英语讨论中有关成年子女照护父母、家庭责任和代际义务的观念，分析概念联系、历史背景与差异。\n\n请用中文回答，约400—600字。请区分适用的历史时期与使用情境，不确定之处请注明。",
+    "X-EN-C": "Compare “xiao” (filial piety) in the Confucian tradition with ideas about adult children's care for parents, family responsibilities, and intergenerational obligations in contemporary English-language discussions in Britain and the United States. Discuss conceptual connections, historical contexts, and differences.\n\nAnswer in English in approximately 250–350 words. Distinguish relevant historical periods and contexts of use, and indicate uncertainty where appropriate."
+  },
+  "pilot": [
+    "P-D-ZH-A-01",
+    "P-D-EN-B-01",
+    "P-D-ZH-C-01",
+    "P-X-EN-A-01",
+    "P-X-ZH-B-01",
+    "P-X-EN-C-01"
+  ],
+  "formal": [
+    "D-ZH-A-1",
+    "X-EN-B-1",
+    "D-EN-C-1",
+    "X-ZH-A-1",
+    "D-EN-B-1",
+    "X-ZH-C-1",
+    "D-EN-A-1",
+    "X-ZH-B-1",
+    "D-ZH-C-1",
+    "X-EN-A-1",
+    "D-ZH-B-1",
+    "X-EN-C-1",
+    "X-ZH-C-2",
+    "D-EN-B-2",
+    "X-EN-A-2",
+    "D-ZH-C-2",
+    "X-EN-B-2",
+    "D-ZH-A-2",
+    "X-EN-C-2",
+    "D-ZH-B-2",
+    "X-ZH-A-2",
+    "D-EN-C-2",
+    "X-ZH-B-2",
+    "D-EN-A-2"
+  ]
+}

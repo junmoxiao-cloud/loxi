@@ -1,0 +1,5 @@
+config.json
+.env*
+runs/
+exports/
+__pycache__/

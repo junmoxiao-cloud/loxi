@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "model": "",
+  "model_code": "M01",
+  "parameters": {},
+  "protocol_version": "v0.1-pre",
+  "formal_frozen": false
+}
