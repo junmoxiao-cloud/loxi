@@ -55,8 +55,12 @@ def main():
         parser.error("正式阶段需先记录冻结决定")
     if not re.fullmatch(r"[A-Za-z0-9_-]+",cfg["model_code"]):
         parser.error("模型管理编号无效")
-    if set(cfg["parameters"]) - {"temperature","top_p","max_tokens","seed"}:
-        parser.error("配置仅允许采样参数与输出上限")
+    if set(cfg["parameters"]) - {"temperature", "top_p", "max_tokens", "seed", "thinking"}:
+        parser.error("配置仅允许采样参数、输出上限与推理模式")
+    if "thinking" in cfg["parameters"] and cfg["parameters"]["thinking"] not in (
+        {"type": "enabled"}, {"type": "disabled"}
+    ):
+        parser.error("thinking 须为明确的 enabled 或 disabled")
     if not cfg["endpoint"].startswith("https://"):
         parser.error("请使用官方 HTTPS 地址")
     token = os.environ["MODEL_API_KEY"]
@@ -78,7 +82,11 @@ def main():
         with urlopen(request,timeout=120) as response:
             record["response"]=json.load(response)
         answer=record["response"]["choices"][0]
-        record["status"]="received" if answer["message"].get("content") else "empty"
+        record["finish_reason"] = answer.get("finish_reason")
+        record["status"] = (
+            "truncated" if record["finish_reason"] == "length"
+            else "received" if answer["message"].get("content") else "empty"
+        )
     except Exception as exc:
         record.update(status="error",error=str(exc))
     tmp=file.with_suffix(".tmp")
